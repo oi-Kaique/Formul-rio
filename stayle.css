@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 106px;
+  background: #BFD7E4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 465px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#293241;
+  z-index: -1;
+  padding-bottom: 250px;
+}
+
+header {
+  width: 1440px;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: 0;
+  padding: 0 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+fieldset legend{
+  display: flex;
+ justify-content: space-around;
+}
+
+header h1 {
+  color: #FFF;
+  font-family: Staatliches;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+header p {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.top {
+  width: 750px;
+  height: 133px;
+  border-radius: 20px 20px 0px 0px;
+  background: #F67669;
+  margin: 0 345px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+form {
+  width: 750px;
+  background: #FFF;
+  border-radius: 0px 0px 20px 20px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+
+
+
+span {
+  color: #C1BCCC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+span:hover {
+  color: #87838f;
+}
+
+
+label {
+  width: 465px;
+  height: 24px;
+  color: #4E4958;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+button  {
+  border-radius: 11px;
+  height: 51px ;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  
+}
+button .button{
+  background: #F67669;
+  border-radius: 8px;
+  height: 50px ;
+  width: 100%;
+  
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+button input:hover {
+  background: #bb5d52;
+}
+
+.bord-button {
+  border-bottom: 1px solid #253B51;
+  padding-bottom: 20px;
+}
+
+
+.input-time input{
+  width: 200px;
+  height: 55.529px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+  margin-bottom: 31px;
+  display: flex;
+}
+
+.input-username {
+  display: flex;
+  gap: 30px;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+  width: 300px;
+  height: 55.529px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+  margin-bottom: 31px;
+  display: flex;
+}
+
+.input-wrapper select {
+  width: 300px;
+  height: 55px;
+  display: flex;
+  margin-top: 7px;
+}
+
+.input-wrapper textarea {
+  display: flex;
+  width: 608px;
+  height: 166px;
+  margin-bottom: 20px;
+}
+
+.fieldset-wrapper, .fieldset-time{
+  color: #253B51;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 34px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper select{
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 24px top 23px;
+  padding-left: 5px;
+}
+
+.checkbox-wrapper{
+  position: relative;
+}
+
+.checkbox-wrapper label::before {
+ content: "";
+ width: 24px;
+ height: 24px;
+ border: 1px solid #E6E6F0;
+ border-radius: 8px;
+ display: block;
+}
+
+.checkbox-wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.checkbox-wrapper input{
+  position:absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_5088_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5088_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.checkbox-wrapper input:focus +label::before{
+  outline: 2px solid black;
+}

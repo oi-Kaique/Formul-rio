@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stayle.css">
+  <title>Formulário</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>AVALIE A SUA MENTORIA</h1><br>
+    <p>Chegou a hora de avaliar a sua mentor. Bora lá?</p><br>
+    <img src="imagens/img1.png" alt="Campo de Estrelas">
+  </header>
+
+  <div class="top">
+    <legend>INFORMAÇÕES PESSOAIS</legend>
+  </div>
+  <form id="my-form">
+
+    <fieldset>
+      <div class="bord-button">
+        <div class="input-username">
+
+          <div class="input-wrapper">
+            <label for="name">Nome</label>
+            <input type="text" id="Nome">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="sobrenome">
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">Email <span>(digite um email valido)</span></label>
+          <input type="email" id="email">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>INFORMAÇÕES DO MENTOR</legend>
+      </div>
+
+
+      <div class="bord-button">
+
+        <div class="input-wrapper">
+          <label for="category">Selecione seu Mentor</label>
+          <select id="category">
+            <option value="Selecione">Selecionar</option>
+            <option value="Mayke brito">Mayke Brito</option>
+            <option value="Diego Fernandes">Diego Fernandes</option>
+            <option value="Welisson Arley">Welisson Arley</option>
+            <option value="Outro">Outros...</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="info">Feedback sobre o mentor</label>
+          <textarea name="info"></textarea>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="event-private" />
+          <label for="private">Todas as minhas duvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-time">
+        <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+
+        <div class="col-3">
+          <div class="input-time">
+            <label for="event-date">Data </label>
+            <input type="date" id="event-date"/>
+          </div>
+
+          <div class="input-time">
+            <label for="event-begin">Das</label>
+            <input type="time" id="event-begin">
+          </div>
+
+          <div class="input-time">
+            <label for="event-end">Até</label>
+            <input type="time" id="event-time">
+          </div>
+        </div>
+    </fieldset>
+
+    <button>
+      <input 
+      class="button" 
+      form="my-form" 
+      type="submit" 
+      value="Salvar">
+    </button>
+  </form>
+</body>
+
+</html>
